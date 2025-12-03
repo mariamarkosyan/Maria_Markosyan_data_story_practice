@@ -144,30 +144,15 @@
 
           <p>For much of our basic data about schools with SBHC, we were able to utilize the <a href='https://docs.google.com/spreadsheets/d/1wsycNjSOLnj9gZ7wepTs7jyuzS7PvquCZEUsugSmMJs/edit?gid=1923834798#gid=1923834798'>google sheet</a> shared to us from our instructor, Jack Dougherty. The data sheet provides in-depth information about the health center services and basic school information for each school. We used the data sheet mostly to differentiate which schools do and do not have a school-based health center across different variables. We did so by adding the column “Has SBHC?”, and matched it to the sheet listing all public schools in Connecticut. To mark the schools that do not have a SBHC, we converted all fields with unidentifiable data to “no”.</p>
 
-          <p>Next, we found all public school names and their addresses via <a href='https://public-edsight.ct.gov/overview/find-schools/find-schools-export'>EdSight</a> , the Connecticut data portal for all public districts, schools, and programs to later be able to visually portray them on a map. Even though there can be other schools that are publicly funded, for this project, we only used the “public schools” category of schools to have the most uniform information across the categories. Once we had the school addresses, we geocoded them via <a href='https://www.geoapify.com/tools/geocoding-online/'>Geoapify</a> , since the typical tool Geocoding by SmartMonkey had a daily limit of 500 coordinates, and the number of schools exceeded that.</p>
+          <p>Next, we found all public school names and their addresses via <a href='https://public-edsight.ct.gov/overview/find-schools/find-schools-export'>EdSight</a>, the Connecticut data portal for all public districts, schools, and programs to later be able to visually portray them on a map. Even though there can be other schools that are publicly funded, for this project, we only used the “public schools” category of schools to have the most uniform information across the categories. Once we had the school addresses, we geocoded them via <a href='https://www.geoapify.com/tools/geocoding-online/'>Geoapify</a>, since the typical tool Geocoding by SmartMonkey had a daily limit of 500 coordinates, and the number of schools exceeded that.</p>
 
-          <p>Once we had all the public schools, we downloaded data regarding the number of students that have disabilities, are English learners, qualify for free or reduced lunch, and are high needs (a combination of the three categories). Since the downloaded data did not present the data by student group, but rather just listed all the data, we inserted a pivot table, then pasted the table by values only. We then calculated the percentage of students per category across all schools, and presented them in our <a href='https://docs.google.com/spreadsheets/d/1hD9RV53bKSLCd6RbYigLR0cj86VqLZP64OXND7up33o/edit?gid=0#gid=0'>Master sheet</a> . Using the data from the master sheet, we created the interactive table in the section above to navigate the data about schools and their percentages of students with high needs, with whether or not they have a SBHC.</p>
+          <p>Once we had all the public schools, we downloaded data regarding the number of students that have disabilities, are English learners, qualify for free or reduced lunch, and are high needs (a combination of the three categories). Since the downloaded data did not present the data by student group, but rather just listed all the data, we inserted a pivot table, then pasted the table by values only. We then calculated the percentage of students per category across all schools, and presented them in our <a href='https://docs.google.com/spreadsheets/d/1hD9RV53bKSLCd6RbYigLR0cj86VqLZP64OXND7up33o/edit?gid=0#gid=0'>Master sheet</a>. Using the data from the master sheet, we created the interactive table in the section above to navigate the data about schools and their percentages of students with high needs, with whether or not they have a SBHC.</p>
 
           <p>  There were several issues we encountered in the process. First, we needed to figure out how to differentiate the schools with and without SBHCs. It was challenging to navigate the field with “N/A” data, so we sorted all schools that have a SBHC to the top, replaced the fields “N/A” with “no” and applied it to the rest of the column. Secondly, the data provided by EdSight needed for our categories combined schools with their codes; so, we had to spend some time cleaning the data sheets for all categories. Finally, geocoding took the most amount of time, since alternative tools and websites from SmartMonkey were designed to convert one address at a time; therefore, finding a website that allowed geocoding in bulk was challenging, but we eventually found it.</p>
 
 
           <p> One uncertainty that is present in our data is that the government of Connecticut mandates that if the number of students in a particular category is below 5, the reported data needs to be masked. In addition, when downloading the files, google sheets saves the masked data as 0, which means that even when students in a particular category are present in the school, they will not be marked so. Another limitation is that not all public schools were listed in the available data about student groups; therefore, their information is missing as well.</p>
 
-
-           <h4>Works Cited:</h4>
-
-
-          <p>CT State Department of Education. “Enrollment Dashboard.” EdSight: CT.Gov, https://public-edsight.ct.gov/students/enrollment-dashboard. Accessed 19 Nov. 2025. </p>
-
-
-          
-          <p>Lurye, Rebecca. “New Housing Code in Hartford Would Keep Slumlords from Hiding Behind LLCs.” Hartford Courant, May 31, 2019. <a href='https://www.courant.com/community/hartford/hc-news-hartford-housing-code-20190531-hcke2jo2x5fpdgz75xf4hlv2ki-story.html'>https://www.courant.com/community/hartford/hc-news-hartford-housing-code-20190531-hcke2jo2x5fpdgz75xf4hlv2ki-story.html</a>.</p>
-
-          <p>“Resident Town Export.” CT.Gov EdSight, <a href='https://public-edsight.ct.gov/Overview/Resident-Town-Dashboard/Resident-Town-Export'>https://public-edsight.ct.gov/Overview/Resident-Town-Dashboard/Resident-Town-Export</a>. Accessed 29 Nov. 2022.</p>
-
-          <br>
-
-          <p>Optional Hint: To display a clickable web link in the bibliography, look at the HTML code in GitHub for the examples above. See how the URL appears twice: once in the "href" and again in the display text. This is not required for your data story, but it looks good and helps readers to click and view your sources.</p>
 
         </div>
       </div>
@@ -183,88 +168,12 @@
 
           <h2>Sources</h2>
 
-          <p>All of your data visualizations should be interactive. But if you need to insert a static image, you can prepare a JPG or PNG file (preferably with all lower-case text and no spaces in the filename) and upload it directly into your GitHub repo, as shown below:</p>
+        <p>Dougherty, Jack. <a href='https://docs.google.com/spreadsheets/d/1wsycNjSOLnj9gZ7wepTs7jyuzS7PvquCZEUsugSmMJs/edit?usp=sharing'>https://docs.google.com/spreadsheets/d/1wsycNjSOLnj9gZ7wepTs7jyuzS7PvquCZEUsugSmMJs/edit?usp=sharing </a>. Accessed 12 Nov., 2025.</p>
+          
+          <p>EdSight. <a href='https://public-edsight.ct.gov/overview/find-schools/find-schools-export?language=en_US'>https://public-edsight.ct.gov/overview/find-schools/find-schools-export?language=en_US </a>. Accessed 16 Nov., 2025.</p>
 
-          <img src="sample-image1.jpg" style="width: 100%; margin: 30px 0">
-
-          <p>Next, write an HTML image tag ("img") that points to a source image ("src") stored in your repo, as shown below:</p>
-
-          <img src="sample-image2.jpg" style="width: 100%; margin: 30px 0">
-
-          <p>Figure 2: Describe your image in a caption, and always credit the source if someone else created it.</p>
-
-          <h4>Optional Subheaders</h4>
-
-          <p>Use subheader tags (such as "h4") to break up long sections of text without creating a new section.</p>
-
-          <h4>Collaborate with Co-Author</h4>
-          <p>Compose and edit your data story in Google Docs, where co-authors can work simultaneously. When you're ready to migrate to GitHub, create ONE data story template in ONE author's GitHub account, because only ONE person can edit at a time. But the GitHub account owner can go to Settings > Collaborators > Add People to invite a co-author by using their GitHub username, as shown below. But be careful not to overwrite each other's edits!</p>
-
-          <img src="screenshots/github-collaborators.png" style="width: 100%; margin: 30px 0">
-
-          <h4>Change background colors</h4>
-          <p> This template uses <a href='https://getbootstrap.com/docs/5.0/utilities/background/'>Bootstrap background colors</a>. For example, search this "index.html" file for "bg-primary", which sets the navigation bar (line 28), header (line 56), and footer (around line 245) to blue. Changing it to "bg-secondary" switches those colors to gray. Learn about other color options at the link above.</p>
-
-          <h4>Quicker Edits on your Local Computer</h4>
-
-          <p>Instead of slowly making edits on GitHub and waiting for them to appear online, you can quickly make multiple edits in your local computer and view them instantly in your browser. Here's a list of steps:
-            <ol>
-              <li>Go to your GitHub repo and select Code > Download Zip and uncompress the folder.</li>
-              <img src="screenshots/code-download.png" style="width: 75%; margin: 30px 0">
-              <li>Install a code editor tool. My favorite free open-source option is the <a href="https://pulsar-edit.dev"> open-source Pulsar text editor</a>, but there are many other options.</li>
-              <li>Open the "index.html" file with your code editor and make edits.</li>
-              <li>In your browser, go to File > Open to view the "index.html" file that is on your local computer. Since this version is temporarily stored on your local computer, your browser bar will display its location in a local format "file..." rather than the online format "https..."</li>
-              <img src="screenshots/index-open-with.png" style="width: 75%; margin: 30px 0">
-              <li>In your code editor, save changes to your "index.html" file, then refresh your browser to instantly view your changes made on your local computer.</li>
-              <img src="screenshots/save-edits.png" style="width: 100%; margin: 30px 0">
-              <li>After editing, upload the contents of "index.html" from your local computer to your online GitHub account, then view your edits the public web.
-            </ol>
-          </p>
-
-          <h4>Two Options for Tables</h4>
-
-          <p>If you need to create a table, first try the Datawrapper Tables tool -- see <a href='https://handsondataviz.org/table.html'>HODV Chapter 8</a> -- and embed the results like this:</p>
-
-          <iframe title="Table 1: Suburbs Offer a Small Percentage of Their Seats to Hartford Open Choice Students " aria-label="Table" id="datawrapper-chart-Qrb7J" src="https://datawrapper.dwcdn.net/Qrb7J/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="972"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
-
-          <p>Table 1: Add your standalone caption here.</p>
-
-          <p>A second option is to use the <a href="https://www.tablesgenerator.com/html_tables">Tables Generator HTML tool</a>. Go to File > Import or manually enter your table data, then Generate the HTML code, and paste it here, similar to this sample: </p>
-
-          <style type="text/css">
-          .tg  {border-collapse:collapse;border-spacing:0;}
-          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg .tg-lqy6{text-align:right;vertical-align:top}
-          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-          .tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
-          </style>
-          <table class="tg">
-          <thead>
-            <tr>
-              <th class="tg-0pky">Header A</th>
-              <th class="tg-0pky">Header B</th>
-              <th class="tg-0pky">Header C</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="tg-dvpl">123</td>
-              <td class="tg-dvpl">456</td>
-              <td class="tg-dvpl">789</td>
-            </tr>
-            <tr>
-              <td class="tg-lqy6">987</td>
-              <td class="tg-lqy6">654</td>
-              <td class="tg-lqy6">321</td>
-            </tr>
-          </tbody>
-          </table>
-
-          <p>Table 2: Add your caption here.</p>
+           <p>EdSight. <a href='https://public-edsight.ct.gov/students/enrollment-dashboard/public-school-enrollment-export?language=en_US'>https://public-edsight.ct.gov/students/enrollment-dashboard/public-school-enrollment-export?language=en_US </a>. Accessed 12 Nov., 2025.</p>
+          
 
         </div>
       </div>
